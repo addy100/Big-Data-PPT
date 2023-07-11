@@ -32,7 +32,7 @@ if __name__ == "__main__":
             map_reduce = map(mapper, input_file, sys.stdin)
             for key, value in reduce(map_reduce):
                 writer(f"{key}:{value}\n")
-
+```
 
 #### Q3. Write a Spark program to count the number of occurrences of each word in a given text file.
 ```
@@ -54,3 +54,4 @@ if __name__ == "__main__":
     with open(output_file, "w") as output_file:
         for word, count in word_counts:
             output_file.write(f"{word}:{count}\n")
+```
